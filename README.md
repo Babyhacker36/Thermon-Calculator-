@@ -1,3 +1,8 @@
+**Lou Carter**  
+GitHub: [github.com/Babyhacker36](https://github.com/Babyhacker36)  
+LinkedIn: [linkedin.com/in/louiscarterjr/](https://www.linkedin.com/in/louiscarterjr/)  
+website:  [louiscarterjr.com] (https://www.linkedin.com/in/louiscarterjr/) 
+
 This code defines a set of variables and functions to calculate and update various costs related to a lighting system, specifically focusing on diesel fueling, oil and air filter changes, LED light tower rental, and electricity usage.
 
 Key features of the code:
@@ -10,6 +15,8 @@ Cost updates: Each calculation is updated on the webpage dynamically using the u
 Event listeners: The code has event listeners attached to inputs for real-time updates, and it dynamically adjusts fields based on certain input values (e.g., when the value of nomiu is entered, the LED rental field becomes active).
 Helper functions: Additional helper functions ensure that the user input is restricted to numbers and hide/display content based on certain conditions.
 The overall goal of the code is to provide a real-time, interactive way to calculate costs for operating a lighting system and show potential cost savings from using LED lights instead of traditional methods.
+
+## Message From Lou
 
 Louis Carter's Wisdom of the Day:
 

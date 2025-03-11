@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thermon Calculator USA</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="topRowSection">
+      <div class="row" id="topRow">
+        <div class="col-12">
+          <div>
+          <img src="./img/01-Thermon-Primary-Logo-2020_new.png" alt="This is the image" />
+          <h1>Power </h1>
+          
+          <h1>Solutions</h1>
+        </div>
+        </div>
+      </div>
+      <!-- ============ end of top row ============ -->
+
+      <div class="container-fluid" id="innerContainer">
+
+        <div class="row justify-content-center" id="topRow2"> 
+<div class="col-lg-6 offset-lg-3 col-xs-12 ">
+
+ <div class="mainImageDiv">
+<div class="imagediv">
+  <img src=" ./img/DeisalLighttower.png" class="diesalImg" alt="This is the product image" id="img1" />
+</div>
+
+  <div class="buttondiv">
+    <button id="lgBtn" disabled>Diesel Light  Tower</button>
+    <button id="smallBtn" disabled>Diesel <br> Light  Tower</button>
+  </div>
+ </div>
+
+ <div>
+  <span>VS.</span>
+ </div>
+
+ 
+ <div class="mainImageDiv">
+
+  <div class="imagediv">
+    <img src="./img/LedLighttower.png" class="lightImg" alt="This is the product image "  />
+  </div>
+  <div class="buttondiv">
+    <button id="lgBtn" disabled> <b>Thermon LED Light Tower</b></button>
+  <button id="smallBtn" disabled> <b>Thermon LED <br> Light Tower</b></button>
+
+  </div>
+
+ </div>
+</div>
+<!-- end of col-12 -->
+<div class="col-lg-3 csdHide" id="costSavingsDiv">
+<div>
+  <p>
+    Costs savings of All Thermon LED Light Tower /
+     Year vs. Diesel Light Tower for project duration 
+    </p><p class="colorRed"  id="costsavingsallledProject">
+      --
+    </p>
+     <button id="costSavBtn" type="button" data-toggle="modal" data-target="#seeCostSavingsModal">
+       See Cost Savings
+     </button>
+</div>
+</div>
+
+        </div>
+        <!-- end of the row -->
+      </div>
+      <!-- end of the container  first section  -->
+    </div>
+    <!-- end of the container-fluid  first section  -->
+
+
+    <div class="container-fluid"  id="secondSection">
+      
+      <div class="row">
+   
+<div class="col-5" id="compareLeftInput">
+
+<table id="topTable">
+  <tbody>
+    <tr>
+
+      <td>
+        
+        Diesel Light Tower <span data-toggle="popover" title="Diesel Light Tower" data-content="(Average Size 50 Hour per fuel tank) rental per month" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+    
+      </td> 
+      <td id="inputTD">
+          <span>$</span><input type="text" placeholder=""  id="dlt" onkeypress="return isNumberKey(event)" >
+       </td>
+   </tr>
+   
+   <tr>
+       <td> Cost of Diesel Fuel per Gallon</td> 
+       <td id="inputTD">
+           
+           <span>$</span><input type="text" placeholder="" id="codfpg" onkeypress="return isNumberKey(event)" ></td>
+    </tr>
+    <tr>
+       <td>Hours of Operation per Night </td><td><span id="hideMoney">$</span><input type="text" placeholder="" id="hoopn"onkeypress="return isNumberKey(event)">   </td>
+   </tr>
+   
+    <tr>
+       <td>Days of Operation per Week </td><td><span id="hideMoney">$</span><input type="text" placeholder="" id="doopw" onkeypress="return isNumberKey(event)">   </td>
+   </tr>
+   
+    <tr>
+       <td>Number of Months in Use  </td>
+       <td><span id="hideMoney">$</span><input type="text" placeholder="" id="nomiu" onkeypress="return isNumberKey(event)">   </td>
+   </tr>
+
+   <tr>
+    <td>Number of light towers on the project: </td>
+      <td><span id="hideMoney">$</span><input type="text" placeholder="" id="noltop" onkeypress="return isNumberKey(event)"> 
+       
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+<div id="disclaimerDiv"><span> All Fields Above Must Be Filled in.</span></div>
+</div>
+        <div class="col-2">
+          <span id="CompareBtn" type="button"  data-toggle="modal" data-target="#exampleModalCenter" >Comparison
+          </span>
+        </div>
+
+
+        <div class="col-5" id="compareRightInput">
+          <table id="topTable">
+            <tbody>
+              <!-- <tr>
+                <td>
+                  
+                  Thermon LED Light Tower <span data-toggle="popover" title="Thermon LED Light Tower" data-content="Per Month" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+             
+                   </td> 
+                <td id="inputTD">
+                     
+                 <span>$</span> <input type="text" placeholder="700.00" id="tledlt" onkeypress="return isNumberKey(event)" disabled></td>
+             </tr> -->
+
+
+             <!-- practice code goes here -->
+             <tr>
+              <td>
+                
+                Thermon LED Light Tower<span data-toggle="popover" title="Thermon LED Light Tower" data-content="Per Month" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+           
+                 </td> 
+              <td id="inputTD">
+                   
+               <span>$</span> 
+               
+               
+               <!-- <input list="browsers" name="myBrowser" /></label> -->
+               <input list="price" name="price" type="text" placeholder="Cust Input" id="tledlt" onkeypress="return isNumberKey(event)" disabled></td>
+                <datalist id="price">
+                  <option id="price" name="price" value="List Price">
+                </datalist>
+
+
+           </tr>
+
+
+
+
+             <tr>
+                 <td> Cost of Diesel Fuel per Gallon</td> 
+                 <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>Hours of Operation per Night </td><td><span id="hideMoney">$</span><input type="text" placeholder="12" id="ledhoopn"  name="inputDark" disabled></td> 
+             </tr>
+              </tr>
+              <tr>
+                 <td>Days of Operation per Week </td><td><span id="hideMoney">$</span><input type="text" placeholder="7" id="leddoopw" name="inputDark" disabled></td>
+             </tr>
+             
+              <tr>
+                 <td>Number of Months in Use  </td><td><span id="hideMoney">$</span><input type="text" placeholder="12" id="lednomiu" name="inputDark" disabled></td>
+             </tr>
+             <tr>
+              <td>Number of light towers on the project: </td>
+                <td><span id="hideMoney">$</span><input type="text" placeholder="20" id="lednoltop" name="inputDark" disabled> 
+                 
+              </td>
+            </tr>
+            
+            </tbody>
+          </table>
+
+          <div id="disclaimerDiv2"><span>All Fields Above Must Be Filled in.</span></div>
+        </div>
+      </div>
+
+    </div>
+
+<!-- ============= Third section  ============ -->
+
+    <div class="container-fluid" id="ContainerThirdOuter">
+      <div class="container-fluid" id="containerThird">
+        <table id="bottomTable">
+          <colgroup>
+            <col class="tdLeft" />
+            <col class="tdCenter" />
+            <col class="tdRight" />
+          </colgroup>
+         
+          <tbody>
+         <!-- Left side  -->
+            <tr>
+            <td>
+              <br>
+            
+              <span>
+              Diesel Operating Costs: 
+              </span>  
+          
+            </td> 
+              <td> <br><i class="far fa-calendar-alt fa-3x"></i>    </td>  
+              <td>
+                <br>
+                <span>LED Operating Costs:</span>  
+              </td>
+                </tr>
+        
+            <tr>
+              <td>
+                <p>
+                  Electrical utility cost <br>  for Diesel Light  Tower
+                  </p>  
+              </td>
+                
+                <td><i class="fas fa-bolt fa-3x"></i> </td>  
+                <td>
+                  <p>
+                    Electrical utility cost  <br>(1) LED light Tower <span data-toggle="popover" title="Electrical utility cost (1) LED light Tower" data-content="(0.08kwh)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+
+                    
+
+                    </p> 
+                </td>
+            </tr>
+
+            <tr> 
+              <td>
+                <p class="colorRed">
+                  $0.00
+                </p>  
+              </td>
+              <td>
+               
+              </td>
+              <td>
+                 <p class="colorRed" id="ledeucllt">--</p> 
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>
+            
+                  Diesel Fueling costs <span data-toggle="popover" title="Diesel Fueling costs" data-content="(includes fuel cost plus re-fueling labor with Labor being additional 89% of fuel cost)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+
+
+                </p>  
+               
+              </td>
+
+                <td><i class="fas fa-gas-pump fa-3x"></i> </td>  
+                <td>
+                  <p>
+                    Fueling costs  
+                     </p>
+                </td>
+
+            </tr>
+
+            <tr> 
+              <td>
+                <p class="colorRed" id="DeisalFuelingCost">
+                  --
+                </p>    
+              </td>
+              <td>
+               
+              </td>
+              <td>
+                <p class="colorRed">
+                  $0.00
+                </p> 
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p >
+              
+                  Oil change every 200hrs <span data-toggle="popover" title="Oil change every 200hrs" data-content="(assumes $40 parts/labor)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+                 </p> 
+              </td>
+                
+                <td><i class="fas fa-oil-can fa-3x"></i> </td>  
+                <td>
+                  <p>
+                    Oil change <br> (not needed)  
+                  </p>
+                </td>
+
+            </tr>
+
+            <tr> 
+              <td>
+                <p class="colorRed" id="oilChangeCost">
+                  --
+                </p>  
+              </td>
+              <td>
+               
+              </td>
+              <td>
+                <p class="colorRed">
+                  $0.00
+                </p> 
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>
+      
+
+                  Air filter change every 300hrs <span data-toggle="popover" title="Air filter change every 300hrs" data-content="(assumes $40 parts/labor)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+              </td>
+                
+                <td><i class="fas fa-filter fa-3x"></i> </td>  
+                <td> 
+                   <p>
+                     Air filter change <br> (not needed)
+                     </p> 
+                  </td>
+            </tr>
+
+            <tr> 
+              <td>
+                <p class="colorRed" id="airFilterChangeCost">
+                  --
+                </p>  
+              </td>
+              <td>
+               
+              </td>
+              <td>
+               <p class="colorRed">
+                 $0.00
+                </p>
+              </td>
+            </tr>
+          <tr>
+            <td>
+              <p>
+          
+
+                4 ea. Light Bulb Changes every 3,000hrs <span data-toggle="popover" title="4 ea. - Light Bulb Changes every 3,000hrs" data-content="(assumes $400 parts/labor)" tabindex="0" data-trigger="focus"id="popoverBtn">*</span>
+            </p>
+            </td>
+              
+              <td><i class="fas fa-lightbulb fa-3x"></i> </td>  
+              <td>       
+                <p >
+                  4 ea. - Light Bulb Changes <br> (not needed) 
+                </p> 
+              </td>
+          </tr>
+
+
+          <tr> 
+            <td>
+              <p class="colorRed" id="each4Cost">
+                --
+             </p>   
+            </td>
+            <td>
+             
+            </td>
+            <td>
+             <p class="colorRed">
+               $0.00 
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+            
+                Winterize <span data-toggle="popover" title="Winterize" data-content="(coolant & fuel additives) 1x/Year assumes $100 parts/labor" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+          </p>
+            </td>
+              
+              <td>
+                <i class="fas fa-snowflake fa-3x">
+                </i>
+               </td>  
+              <td>  
+                 <p>
+                   Winterize <br> (not needed) 
+                  </p> 
+                  </td>
+
+          </tr>
+
+          <tr> 
+            <td>
+              <p class="colorRed">
+                $100
+              </p>    
+            </td>
+            <td>
+             
+            </td>
+            <td>
+              <p class="colorRed">
+                $0.00
+               </p>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <p >
+                Total Operating Costs <br> of Single Diesel Light Tower  <br> for Project Duration
+             </p>
+            </td>
+              
+              <td>
+                <i class="far fa-calendar-alt fa-3x"> </i>
+               </td>  
+              <td> 
+                 <p>
+                   Total Operating Costs  <br>  of Single TPS Light Tower
+                </p>
+               </td>
+
+          </tr>
+
+          <tr> 
+            <td>
+              <p class="colorRed" id="totalYearlyOperatingCost"> 
+                --</p>
+
+            </td>
+            <td>
+             
+            </td>
+            <td>
+              <p class="colorRed" id="totalyearlyTPS">--</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+               
+                Rental Cost of <br>  Diesel Light Tower <br> for Project Duration <span data-toggle="popover" title="Base Rental Cost Of Diesel Light Tower for Project Duration" data-content="($1200.00/month x 12 months)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+              </p>
+            </td>
+              
+              <td><i class="fas fa-broadcast-tower fa-3x"></i> </td>  
+              <td>
+                  <p>
+                    Rental Cost of <br> Thermon LED Light Tower <br> for Project Duration 
+                   </p> 
+                </td> 
+          </tr>
+
+
+          <tr> 
+            <td>
+              <p class="colorRed" id="baseRentalCost">
+                --
+              </p>   
+            </td>
+            <td>
+             
+            </td>
+            <td>
+              <p class="colorRed" id='rentalCostLed'>--</p>
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+             
+                Net Cost of (1) Diesel <br> Light Tower for Project Duration <span data-toggle="popover" title=" Net Cost of (1) Diesel Light Tower for Project Duration" data-content="(Rent and Operating Cost)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+              </p>
+
+           
+            </td>
+              
+              <td><i class="fas fa-dollar-sign fa-3x"></i> </td>  
+              <td> 
+                 <p>
+                
+                   Net Cost of (1) LED <br> Light Tower for Project Duration <span data-toggle="popover" title=" Net Cost of (1) LED Light Tower for Project Duration" data-content="(Rent and Operating Cost)" tabindex="0" data-trigger="focus" id="popoverBtn">*</span>
+                 </p> 
+                  </td>
+          </tr>
+
+          <tr> 
+            <td>
+                <p class="colorRed" id="netdeiselCost">
+                --
+              </p>   
+            </td>
+            <td>
+             
+            </td>
+            <td>
+              <p class="colorRed" id='netCostLed'>--</p>
+            </td>
+          </tr>
+
+          <tr>
+
+            <td></td>
+            <td>
+        
+
+              </i> 
+            </td>  
+          
+
+            <td>
+              <p>
+                Cost savings of (1)  LED <br> Light Tower vs. <br> Diesel Light Tower for Project Duration
+              <p class="colorRed" id="costsavings1led">
+                --
+              </p>   
+            </td>
+              
+            
+          </tr>
+
+
+          <tr>
+            <td></td>
+            <td>
+        
+             </td>  
+         
+            <td>
+              <p>
+                Cost savings of All LED <br> Light Tower / Year  vs. <br> Diesel Light Tower for Project Duration
+                </p>
+                <p  class="colorRed"id="costsavingsallled">
+                  --
+                </p>   
+            </td>
+              
+            
+          </tr>
+  
+        </tbody>
+        </table>
+      </div>
+      <!-- end of the container  third section -->
+
+
+<footer>
+
+
+<div class="row">
+  <div class='col'>
+  <p id="info">  For more information,</p>
+<select id="states">
+  <option value="CS">Choose your State:</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>				
+</div>
+</div>
+<div class="row" id="bothReps">
+    <div class="col-xl-4 offset-xl-2  contactDiv">
+      <div class="contactLeft">
+      <img src="./img/Cory_hollier.jfif" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="contactRight">
+      <div>
+        <span class="cName">Cory Hollier</span> 
+      </div>
+      <div>
+        <span class="cPos">Sales Manager</span>
+      </div>
+      <div>
+        <a href="mailto:Erik.Perison@thermon.com"><i class="far fa-envelope"></i></a>  <span> <a href="mailto:Erik.Perison@thermon.com">Email</a>  </span>
+      </div>
+      </div>
+      </div>
+
+
+    <div class="col-xl-4  contactDiv">
+      <div class="contactLeft">
+      <img src="./img/Cliff_frazier.jfif" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="contactRight">
+      <div>
+        <span class="cName">Cliff Frazier</span> 
+      </div>
+      <div>
+        <span class="cPos">Sales Manager</span>
+      </div>
+      <div>
+        <a href="mailto:cliff.frazier@thermon.com"><i class="far fa-envelope"></i></a>  <span> <a href="mailto:cliff.frazier@thermon.com">Email</a>  </span>
+      </div>
+      </div>
+      </div>
+  
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="row" id="cory">
+  <div class="col-12 contactDiv">
+    <div class="contactLeft">
+    <img src="./img/erik_perison.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="contactRight">
+    <div>
+      <span class="cName">Erik Perison</span> 
+    </div>
+    <div>
+      <span class="cPos">Business Development Manager</span>
+    </div>
+    <div>
+      <a href="mailto:Erik.Perison@thermon.com"><i class="far fa-envelope"></i></a>  <span> <a href="mailto:Erik.Perison@thermon.com">Email</a>  </span>
+    </div>
+    </div>
+    </div>
+</div>
+
+<div class="row" id="cliff">
+  <div class="col-4 offset-4 contactDiv">
+    <div class="contactLeft">
+    <img src="./img/Cliff_frazier.jfif" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="contactRight">
+    <div>
+      <span class="cName">Cliff Frazier</span> 
+    </div>
+    <div>
+      <span class="cPos">Sales Manager</span>
+    </div>
+    <div>
+      <a href="mailto:cliff.frazier@thermon.com"><i class="far fa-envelope"></i></a>  <span> <a href="mailto:cliff.frazier@thermon.com">Email</a>  </span>
+    </div>
+    </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+</footer>
+
+    </div>
+    <!-- end of the container-fluid  Third section -->
+
+
+
+
+
+<!-- modal -->
+
+<div class="modal fade" id="seeCostSavingsModal" tabindex="-1" role="dialog" aria-labelledby="seeCostSavingsModalBtn" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="modalHeader">
+              <h5 class="modal-title" id="header">Cost Savings</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+
+<!-- ============= modal table ===================== -->
+
+<div class="container-fluid">
+
+  <table id="modalTable">
+
+
+
+  <colgroup>
+    <col class="tdLeft" />
+    <col class="tdCenter" />
+    <col class="tdRight" />
+  </colgroup>
+ 
+  <tbody>
+
+
+    <tr>
+      <td>
+        <p>
+          Net Cost of (1) LED <br> Light Tower  <br>(Rent and Operating Cost) <br> for Project Duration 
+        </p>
+      
+      </td>
+        
+        <td><i class="fas fa-money-bill fa-3x"></i></td>  
+        <td>
+          <p>
+            Cost savings of (1) LED <br> Light Tower vs. <br> Diesel Light Tower <br> for Project Duration
+         
+           
+        </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="colorRed" id="modalCostSavingsNet">
+          --
+        </p>  
+        </p>  
+      </td>
+        
+        <td></td>  
+        <td>
+          <p class="colorRed" id="modalCostSavings1led">
+            --
+           </p> 
+           
+        </td>
+    </tr>
+
+
+    <!-- second row -->
+
+    <tr>
+      <td>
+      </td>
+        
+        <td><i class="fas fa-dollar-sign fa-3x"></i> </td>  
+        <td>
+          <p>
+            Cost savings of All <br> LED Light Tower / Year <br> vs. Diesel Light Tower <br> for project duration
+            </p>
+        
+        </td>
+    </tr>
+
+    <tr>
+      <td>
+     
+      
+      </td>
+        
+        <td></td>  
+        <td>
+          <p class="colorRed"  id="modalCostSavingsAllledPD">
+            --
+          </p> 
+        </td>
+    </tr>
+   
+
+</tbody>
+</table>
+
+</div>
+
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+
+<!-- custom js -->
+    <script src="./script.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b8b2323ef.js" crossorigin="anonymous"></script>
+    <!-- BootStrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- popover -->
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+      });
+      </script>
+
+  </body>
+</html>

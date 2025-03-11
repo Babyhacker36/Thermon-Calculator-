@@ -1,0 +1,1176 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: #000;
+}
+
+/* =============== JumboRow1 ================== */
+#topRowSection {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.89);
+  background-image: url("./img/Portable-Power-Systems.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+/* Logo */
+#topRow img {
+  width: 5%;
+  margin: 0 30px;
+}
+
+/* controls the entire header with logo and h1 */
+#topRow .col-12 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.7%;
+  padding: 20px;
+}
+
+#topRow h1 {
+  margin-right: 15px;
+}
+
+/* =============== JumborowRow2  inner ================== */
+
+#innerContainer {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#topRow2 .col-lg-6 {
+  display: flex;
+  padding: 0;
+}
+
+/* div left right */
+#topRow2 .col-lg-6 > div:nth-child(1),
+#topRow2 .col-lg-6 > div:nth-child(3) {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* center div vs */
+#topRow2 .col-lg-6 > div:nth-child(2) {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cost savings div */
+
+.csdHide {
+  visibility: hidden;
+}
+
+#costSavingsDiv > div {
+  background-color: #000;
+  border: 1px solid #da291c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#costSavingsDiv p:nth-child(2) {
+  display: inline;
+}
+
+#costSavBtn {
+  font-size: 1rem;
+  background-color: #da291c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+/* div animation */
+/* product images */
+
+/* div hieghts */
+.mainImageDiv {
+  height: 100%;
+}
+.imagediv {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.buttondiv {
+  height: 20%;
+}
+
+.lightImg {
+  height: 200px;
+  width: 185px;
+}
+.diesalImg {
+  height: 140px;
+  width: 105px !important;
+}
+
+/* vs */
+#topRow2 div > span {
+  font-size: 3.125rem;
+  font-weight: bold;
+}
+
+#lgBtn {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgb(136, 139, 141);
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-top: 15px;
+  font-size: 1.125rem;
+  cursor: default;
+}
+
+#smallBtn {
+  display: none;
+}
+
+/*===== modal section ======  */
+
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+
+#modalTable {
+  background-color: #000;
+  border: none;
+}
+
+#modalTable td:nth-child(1) {
+  text-align: right;
+  padding: 10px 30px;
+}
+
+#modalTable td:nth-child(2) {
+  text-align: center;
+  background-color: #000;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+#modalTable td:nth-child(3) {
+  text-align: left;
+  padding: 10px 30px;
+}
+
+.modal-content {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.modalHeader {
+  text-align: center;
+  width: 100%;
+}
+.modalHeader > button {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* ============= second section comparison tables ============== */
+
+#secondSection > .row {
+  text-align: center;
+  background-color: rgb(136, 139, 141);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#topTable {
+  width: 90%;
+}
+
+#compareLeftInput {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#compareRightInput {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+#tledlt::placeholder {
+  font-size: 0.6em;
+}
+
+#disclaimerDiv {
+  color: #fff;
+}
+
+#disclaimerDiv2 {
+  color: #fff;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* popoverBtn */
+
+#popoverBtn {
+  border: none;
+  color: #da291c;
+  font-weight: bold;
+}
+
+#popoverBtn:hover {
+  cursor: pointer;
+}
+.popover {
+  background-color: #000;
+  border: 1px solid gray;
+}
+
+.popover-header {
+  background-color: #000;
+  border-bottom: 1px solid gray;
+  color: #fff;
+}
+
+.popover-body {
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+.data-trigger {
+  background-color: red;
+}
+
+/* middle comparison title button */
+#CompareBtn {
+  font-size: 1.5625rem;
+  font-weight: bold;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: default;
+}
+
+/* animated arrow */
+
+.arrow {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 2em;
+  display: block;
+  height: 0;
+  margin: 10px auto;
+  opacity: 0.2;
+  text-indent: -9999px;
+  transform-origin: 10% 60%;
+  width: 0;
+  font-size: 5px;
+}
+
+.down {
+  animation: downarrow 0.5s infinite alternate ease-in-out;
+  border-top: 2em solid #da291c;
+}
+
+@keyframes downarrow {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(0.4em);
+    opacity: 0.9;
+  }
+}
+
+/* all right and left td only and paragraphs middle is set to a div */
+#topTable td {
+  padding-bottom: 10px;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* input table columns */
+#topTable td:nth-child(1) {
+  width: 70%;
+}
+
+#topTable td:nth-child(2) {
+  width: auto;
+}
+/* manipulates input heights */
+
+#topTable input[type="text"] {
+  margin: 4px 0;
+}
+
+input[disabled],
+input[disabled]:hover {
+  background-color: #fff;
+}
+
+#topTable span {
+  padding-right: 5px;
+  margin: 0;
+}
+
+/* bottom table */
+
+#hideMoney {
+  visibility: hidden;
+}
+
+#topTable input[type="text"],
+textarea {
+  border: none;
+  width: 60%;
+  text-align: right;
+  padding-right: 5px;
+  /* border: 1px solid #da291c; */
+}
+
+input::placeholder {
+  color: gray;
+  border: none !important;
+  font-weight: normal;
+}
+
+input {
+  color: #da291c;
+  border: none !important;
+  /* font-weight: bold; */
+}
+
+input[name="inputDark"] {
+  background-color: rgb(151, 151, 151);
+  color: #fff;
+  border: none !important;
+}
+
+input[name="inputDark"]::placeholder {
+  color: #fff;
+  border: none !important;
+}
+
+/* ============= third section ============== */
+
+#ContainerThirdOuter {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+#containerThird {
+  width: 90%;
+  background-color: #000;
+}
+
+table {
+  width: 100%;
+}
+
+.tdLeft,
+.tdRight {
+  width: 45%;
+}
+
+.tdCenter {
+  width: 10%;
+  background-color: rgb(136, 139, 141);
+}
+
+#bottomTable {
+  background-color: #000;
+}
+
+#bottomTable td:nth-child(1) {
+  text-align: right;
+  padding: 10px 55px;
+}
+
+#bottomTable td:nth-child(2) {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#bottomTable td:nth-child(3) {
+  text-align: left;
+  padding: 10px 55px;
+}
+
+/* Numbers */
+.colorRed {
+  color: #da291c;
+}
+
+/* bottom table inputs */
+
+#bottomTable input[type="text"],
+textarea {
+  border: none;
+  width: 20%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.exampleModalCenter {
+  background-color: #000;
+}
+
+/* ============ arrow  up ============== */
+
+.arrowfoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  /* /* top: 50%; */
+  /* left: 50%;  */
+  /* transform: translate(50%,50%); */
+}
+
+.arrowtext {
+  color: #000;
+  font-weight: bold;
+}
+.arrowfoot span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  /* transform: rotate(0deg); */
+  /* margin: -10px; */
+  animation: animate 2s infinite;
+}
+.arrowfoot span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrowfoot span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(-135deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-135deg) translate(-20px, -20px);
+  }
+}
+
+/* ========= footer section ============ */
+footer {
+  margin-top: 30px;
+  height: auto;
+}
+.contactDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-top: 40px; */
+  /* background-color: green; */
+}
+.contactLeft  {
+  /* background-color: red; */
+  justify-content: flex-end;
+}
+
+select {
+  background-color: #000;
+  color: #fff;
+  margin: 1px 0 20px;
+}
+
+.contactChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contactLeft {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 50%;
+  /* background-color: purple; */
+  padding: 0 15px;
+}
+
+.contactRight {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 50%;
+  padding: 0 15px;
+}
+
+
+
+/* .contactRight {
+  width: 80%;
+  height: 100%;
+  margin-left: -15%;
+} */
+.contactRight > div {
+  padding-top: 20px 0;
+  height: 33%;
+}
+
+.contactRight a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* constact name */
+.cName {
+  font-size: 1.3rem;
+}
+
+/* contact position */
+.cPos {
+  font-size: 1.3rem;
+  color: #da291c;
+}
+
+.contactLeft img {
+  border-radius: 50%;
+  height: 100px;
+  height: 100px;
+}
+
+/*================ media quiries ==========================  */
+
+/* ipads */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #topRow h1 {
+    /* width: 5%; */
+    font-size: 1.875rem !important;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  /* Logo */
+  #topRow img {
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+  }
+
+  /* product images */
+  #topRow2 img {
+    height: 100px;
+    width: 75px;
+  }
+
+  /* product images */
+
+  .innerContainer {
+    margin: 20px 0;
+  }
+  .csdHide {
+    display: none;
+  }
+
+  /* div hieghts */
+  .mainImageDiv {
+    height: 100%;
+  }
+  .imagediv {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .buttondiv {
+    height: 20%;
+  }
+
+  .lightImg {
+    height: 95px;
+    width: 85px;
+  }
+
+  .diesalImg {
+    height: 85px !important;
+    width: 65px !important;
+  }
+
+  /* vs */
+  #topRow2 div > span {
+    font-size: 3rem !important;
+    font-weight: bold;
+  }
+
+  /* button titles */
+
+  #lgBtn {
+    display: block;
+    margin: 15px 0;
+    outline: none;
+  }
+
+  #smallBtn {
+    display: none;
+  }
+
+  #innerContainer {
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+
+  /* Left column */
+  #compareLeftInput {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Right column */
+  #compareRightInput {
+    width: 50%;
+    padding: 0;
+  }
+  /* middle comparison title */
+  #secondSection .col-2 {
+    display: none;
+  }
+
+  /* bottom container font size */
+
+  #ContainerThirdOuter {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5875rem !important;
+  }
+
+  /* bottom input  */
+
+  #bottomTable input[type="text"],
+  textarea {
+    width: 20% !important;
+  }
+
+  #containerThird {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bottomTable {
+    background-color: #000;
+    display: table;
+    width: 100%;
+  }
+
+  /* ============ arrow  up ============== */
+
+  .arrowfoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .arrowtext {
+    color: #000;
+    font-weight: bold;
+  }
+  .arrowfoot span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    animation: animate 2s infinite;
+  }
+  .arrowfoot span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  .arrowfoot span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(-135deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(-135deg) translate(-20px, -20px);
+    }
+  }
+
+  /* ========= footer section ============ */
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 10px;
+  }
+  #info {
+    font-size: 1.5rem;
+  }
+
+  .contactDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+    background-color: green;
+ 
+  }
+
+
+
+  /* .contactLeft,
+  .contactRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
+
+  .contactLeft {
+    width: 50%;
+  }
+
+  .contactRight {
+    width: 50%;
+    height: 100%;
+    /* margin-left: -15%; */
+    background-color: red;
+  }
+  .contactRight > div {
+    padding-top: 20px 0;
+    height: 33%;
+  }
+
+  .contactRight a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  /* constact name */
+  .cName {
+    font-size: 1.3rem;
+  }
+
+  /* contact position */
+  .cPos {
+    font-size: 1.2rem;
+    color: #da291c;
+  }
+
+  .contactLeft img {
+    border-radius: 50%;
+    height: 120px;
+    height: 120px;
+  }
+}
+
+/* =============== small devices ===================== */
+@media only screen and (max-width: 767px) {
+  /* controls the entire header with logo and h1 */
+  #topRow .col-12 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.7%;
+    padding: 10px;
+  }
+
+  /* Logo */
+  #topRow img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  #topRow h1 {
+    /* width: 5%; */
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  /* entire top row section */
+
+  /* product images */
+  /* div hieghts */
+  .mainImageDiv {
+    height: 100%;
+  }
+  .imagediv {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .buttondiv {
+    height: 20%;
+  }
+
+  .lightImg {
+    height: 95px;
+    width: 85px;
+  }
+
+  .diesalImg {
+    height: 75px;
+    width: 55px !important;
+  }
+
+  /* versus title */
+  #topRow2 span {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
+
+  /* button titles */
+
+  #lgBtn {
+    display: none;
+  }
+
+  #smallBtn {
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(136, 139, 141);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px 0;
+    font-size: 0.725rem;
+    outline: none;
+    cursor: default;
+  }
+
+  #innerContainer {
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+
+  /* top row images section  */
+  #topRowSection {
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+  }
+
+  #topRow2 .col-12 {
+    display: table;
+    width: 100%;
+  }
+
+  .csdHide {
+    display: none;
+  }
+
+  /* ==== modal section ===== */
+
+  #modalTable td:nth-child(1) {
+    text-align: right;
+    padding: 10px 10px 10px 0px;
+  }
+
+  #modalTable td:nth-child(2) {
+    text-align: center;
+    background-color: #000;
+    font-size: 6px;
+    padding: 20px 0;
+    /* display: none; */
+  }
+
+  #modalTable td:nth-child(3) {
+    text-align: left;
+    padding: 10px 0px 10px 10px;
+  }
+
+  .modal-content {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+
+  /* ============ second section compare tables =============  */
+
+  #secondSection > .row {
+    padding: 0px;
+  }
+  /* Left column */
+  #compareLeftInput {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Right column */
+  #compareRightInput {
+    width: 50%;
+    padding: 0;
+  }
+
+  /* middle comparison title */
+  #secondSection .col-2 {
+    display: none;
+  }
+
+  #topTable {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+  }
+
+  #topTable td {
+    font-size: 0.75rem;
+  }
+
+  /* input table columns */
+  #topTable td:nth-child(1) {
+    width: 60%;
+  }
+  #topTable td:nth-child(2) {
+    width: 40%;
+  }
+
+  #topTable input[type="text"],
+  textarea {
+    width: 75%;
+    text-align: right;
+    padding-right: 2px;
+  }
+
+  #topTable span {
+    padding-right: 2px;
+    margin: 0;
+  }
+
+  /* <!-- ============= Third section  ============ --> */
+  #ContainerThirdOuter {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  #containerThird {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bottomTable {
+    background-color: #000;
+    display: table;
+    width: 100%;
+  }
+
+  #bottomTable i {
+    font-size: 1.125rem;
+  }
+
+  #bottomTable td:nth-child(1) {
+    text-align: right;
+    padding: 3px 0;
+    text-align: center;
+  }
+
+  #bottomTable td:nth-child(2) {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0px 10px;
+
+    background-color: rgb(136, 139, 141);
+  }
+
+  #bottomTable td:nth-child(3) {
+    text-align: left;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  /* second paragraph */
+  #bottomTable p:nth-child(2) {
+    color: #da291c;
+  }
+
+  /* bottom table inputs */
+
+  #bottomTable input[type="text"],
+  textarea {
+    border: none;
+    width: 50%;
+    text-align: right;
+    padding-right: 5px;
+  }
+
+  /* ============ arrow  up ============== */
+
+  .arrowfoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .arrowtext {
+    color: #000;
+    font-weight: bold;
+  }
+  .arrowfoot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    animation: animate 2s infinite;
+  }
+  .arrowfoot span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  .arrowfoot span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(-135deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(-135deg) translate(-20px, -20px);
+    }
+  }
+
+  /* ========= footer section ============ */
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 10px;
+  }
+
+  .contactDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+  
+  }
+  /* .contactLeft,
+  .contactRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
+
+  .contactLeft {
+    width: 50%;
+  }
+
+  .contactRight {
+    width: 50%;
+    height: 100%;
+    /* margin-left: -15%; */
+    background-color: red;
+  }
+  .contactRight > div {
+    padding-top: 20px 0;
+    height: 33%;
+  }
+
+  .contactRight a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+
+  /* constact name */
+  .cName {
+    font-size: 0.95rem;
+  }
+
+  /* contact position */
+  .cPos {
+    font-size: 0.95rem;
+    color: #da291c;
+  }
+
+  .contactLeft img {
+    border-radius: 50%;
+    height: 60px;
+    height: 60px;
+  }
+}

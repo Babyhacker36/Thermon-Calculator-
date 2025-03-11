@@ -2,7 +2,7 @@
 **Lou Carter**  
 GitHub: [github.com/Babyhacker36](https://github.com/Babyhacker36)  
 LinkedIn: [linkedin.com/in/louiscarterjr/](https://www.linkedin.com/in/louiscarterjr/)  
-website:  [louiscarterjr.com](https://www.linkedin.com/in/louiscarterjr/] () => {
+website:  [louiscarterjr.com(https://www.linkedin.com/in/louiscarterjr)] () => {
 
 This code defines a set of variables and functions to calculate and update various costs related to a lighting system, specifically focusing on diesel fueling, oil and air filter changes, LED light tower rental, and electricity usage.
 

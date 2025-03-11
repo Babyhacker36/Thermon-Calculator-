@@ -788,13 +788,7 @@ select {
 
 
 
-  /* .contactLeft,
-  .contactRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
+
 
   .contactLeft {
     width: 50%;
@@ -1128,13 +1122,7 @@ select {
     margin-bottom: 20px;
   
   }
-  /* .contactLeft,
-  .contactRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  } */
+ 
 
   .contactLeft {
     width: 50%;

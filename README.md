@@ -1,7 +1,8 @@
+## Author
 **Lou Carter**  
 GitHub: [github.com/Babyhacker36](https://github.com/Babyhacker36)  
 LinkedIn: [linkedin.com/in/louiscarterjr/](https://www.linkedin.com/in/louiscarterjr/)  
-website:  [louiscarterjr.com] (https://www.linkedin.com/in/louiscarterjr/) 
+website:  [louiscarterjr.com](https://www.linkedin.com/in/louiscarterjr/] () => {
 
 This code defines a set of variables and functions to calculate and update various costs related to a lighting system, specifically focusing on diesel fueling, oil and air filter changes, LED light tower rental, and electricity usage.
 
@@ -23,4 +24,4 @@ Louis Carter's Wisdom of the Day:
 "Life is like a Wi-Fi signal. The more you chase it, the more it seems to disappear. And if you finally get a strong connection, you'll probably have to pay extra for it. But hey, at least it's not dial-up... right? Anyway, keep your router close, your passwords secure, and never forget to update your software... because like my grandma always says, 'Even your toaster can have an existential crisis.'"
 
 
-
+}
